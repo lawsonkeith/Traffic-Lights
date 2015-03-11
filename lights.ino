@@ -1,24 +1,6 @@
 /* 
- Encoder sim
- -----------
- 
- 
- K Lawson 2014
- 
- Use a pot to control the cycle speed of an encoder simulator.  An A and B channel drive in either direction at speeds from 1-10K Hz.
- A bi-colour LED indiates speed and when we reach 1k and 10kHz.
- 
- When in the mid-position the unit is 'off'; this is taken from a dedband.
- 
- The encoder SM has 4 states and outputs at 4x lower f than it's called.
- The analog sampling and LED control are done using ms timing.
- 
- 1-1KHz output frequency
- 
- Green LED    0-10Hz
- Red LED      10-.1KHz
- Bi           .1K - 1K
- 
+ Traffic light simulator
+ 2014 K Lawson
  
  Notes on Mini
  -------------
@@ -41,6 +23,7 @@
  */
  
  
+// Define LED outputs and switch input
 const byte RD = 10;
 const byte YL = 12;
 const byte GN = 11;
